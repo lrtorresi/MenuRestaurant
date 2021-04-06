@@ -6,7 +6,7 @@ export const getApiUrl = () => {
 }
 
 
-//fun~ção para retornar os dados do restaurante
+//função para retornar os dados do restaurante
 export const getDadosRestaurante = () => {
     return axios.get(getApiUrl() + '/api/restaurante')
         .then(response => {
@@ -14,10 +14,18 @@ export const getDadosRestaurante = () => {
         })
 }
 
-//fun~ção para retornar os produtos
-export const getDadosCardapio = () =>{
+//função para retornar os produtos
+export const getDadosCardapio = () => {
     return axios.get(getApiUrl() + '/api/cardapio')
-    .then(response =>{
-        return response.data;
-    })
+        .then(response => {
+            return response.data;
+        })
+}
+
+//função para cadastrar o novo cliente
+export const postCliente = (cliente) => {
+    return axios.post(getApiUrl() + '/api/cliente', cliente)
+        .then(response => {
+            return response.data;
+        })
 }

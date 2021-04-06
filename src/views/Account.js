@@ -6,10 +6,7 @@ import Register from '../components/Register';
 //declarando um componente como uma função
 
 const Account = () => (
-    <Row>
-        <Col m={3}>
-            <Profile/>
-        </Col>
+    <Row>        
         <Col m={9}>
             <Register/>
         </Col>

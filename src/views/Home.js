@@ -6,10 +6,7 @@ import Products from '../components/Products';
 //declarando um componente como uma função
 
 const Home = () => (
-    <Row>
-        <Col m={3}>
-            <Profile/>
-        </Col>
+    <Row>       
         <Col m={9}>
             <Products/>
         </Col>
